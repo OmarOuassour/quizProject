@@ -11,8 +11,8 @@ export class QuizController {
 
     @Get('/')
 
-    getAllQuiz(){
-        return this.quizServices.getAllQuiz();
+    async getAllQuiz(){
+        return await this.quizServices.getAllQuiz();
     }
 
     @Get('/:id')
